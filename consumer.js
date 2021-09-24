@@ -4,6 +4,7 @@ const CrmLeadExport =require('./model/CrmLeadExport');
 const Property = require('./model/Property');
 const amqp = require('amqplib/callback_api');
 
+console.log("creating connection");
 // For database connection 
 mongoose.connect(config.database, {useUnifiedTopology: true, useNewUrlParser: true});
 
